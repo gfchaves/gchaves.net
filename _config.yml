@@ -10,10 +10,10 @@
 
 title: GCHAVES.NET                          # the main title
 
-tagline: Thoughts of software architecture, and some aircraft on the cloud.  # it will display as the sub-title
+tagline: Thoughts on software architecture, Azure cloud, and aircrafts metaphors.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
- Thoughts of software architecture, and some aircraft on the cloud
+ Thoughts on software architecture, Azure cloud, and aircrafts metaphors. Advisor on technology and solutions.
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://gchaves.net'
@@ -49,10 +49,10 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: Europe/Lisbon
 
 google_analytics:
-  id: ''          # Fill with your Google Analytics ID
+  id: 'UA-172803138-1'          # Fill with your Google Analytics ID
   pv:
     # The Google Analytics pageviews switch.
     # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
@@ -76,7 +76,7 @@ disqus:
 #
 #     dark   - Use the dark color scheme
 #
-theme_mode: dual
+theme_mode: dark
 
 # boolean type, global switch for ToC in posts.
 toc: true
@@ -110,7 +110,7 @@ defaults:
       type: posts
     values:
       layout: post
-      comments: true    # Enable comments in posts.
+      comments: false    # Enable comments in posts.
       toc: true         # Display TOC column in posts.
       location: Post
       breadcrumb:

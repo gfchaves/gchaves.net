@@ -1,0 +1,43 @@
+
+@echo SONAR-MyProject.services
+
+del c:\@work\testresults\MyProject.services\ /F /Q /S
+rmdir c:\@work\testresults\MyProject.services\ /Q /S
+
+
+git pull
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe" /t:clean
+
+nuget.exe restore
+
+SonarScanner.MSBuild.exe begin /k:"MyProject.services" /d:sonar.host.url="http://localhost:9000" /d:sonar.login="3a325d1f9fed13b744ac92e2cffc30acb59fd702" /d:sonar.cs.xunit.reportsPaths="C:\@Work\TestResults\MyProject.services\MyProject.services.unitresults.xml" /d:sonar.cs.vscoveragexml.reportsPaths="C:\@Work\TestResults\MyProject.services\MyProject.services.coverage.xml"
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe" /t:rebuild
+
+REM Steps to run tests and code coverage
+
+c:\@Work\xunit\xunit.console.exe .\tst\MyProject.services.UnitTests\bin\Debug\MyProject.services.UnitTests.dll -xml C:\@Work\TestResults\MyProject.services\MyProject.services.unitresults.xml
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe" .\tst\MyProject.services.UnitTests\bin\Debug\MyProject.services.UnitTests.dll /EnableCodeCoverage /Settings:"c:\@work\testresults\MyProject.services.runsettings" /TestAdapterPath:"c:\@Work\zoomra\MyProject.Services\packages\xunit.runner.visualstudio.2.4.1\build\_common\" 
+
+rem Move file from coverage test folder to previous
+@echo off
+set "build_dir=C:\@Work\TestResults\MyProject.services"
+set "source_filename=MyProject.services.coverage"
+	for /f "tokens=* delims=" %%i in ('dir /b /a:d /o:-d /t:w "%build_dir%"') do (
+	  set "last_build_dir=%%i"
+	  goto :break
+	)
+	:break
+set "source_file=%build_dir%\%last_build_dir%\%source_filename%"
+
+@echo %source_file%
+
+xcopy %source_file% "C:\@Work\TestResults\MyProject.services" /b/v/y
+
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Team Tools\Dynamic Code Coverage Tools\amd64\CodeCoverage.exe" analyze /output:"C:\@Work\TestResults\MyProject.services\MyProject.services.coverage.xml" "C:\@Work\TestResults\MyProject.services\MyProject.services.coverage"
+
+
+SonarScanner.MSBuild.exe end /d:sonar.login="3a325d1f9fed13b744ac92e2cffc30acb59fd702"

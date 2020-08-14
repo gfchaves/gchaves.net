@@ -14,7 +14,7 @@ My name is Gonçalo Chaves, but everyone calls me by my last name Chaves - excep
 
 I've been working with information technologies for over a decade, from network and services administration I shifted along to software design and application development, mainly focused on web and cloud solutions.
 
-Nowadays as a software architect, in charge of solution design, alongside agile development, best practices, and application life-cycle management adoption for the team's daily operations.
+Nowadays as a Azure architect, in charge of solution design, alongside agile development, best practices, and application life-cycle management adoption for the team's daily operations.
 
 Along the design and development process, I always got engage with customers and partners, to develop end to end solutions, regarding the business priority for goals and company achievements.
 I have always been enrolled in local tech-communities and user groups. Sharing and learning from personals experiences and keeping up to date to improve my self with new trends, best practices, patterns, and technologies.

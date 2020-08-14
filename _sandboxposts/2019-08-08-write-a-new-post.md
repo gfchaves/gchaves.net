@@ -12,6 +12,8 @@ Create a new file named `YYYY-MM-DD-TITLE.EXTENSION` and put it in the `_post/` 
 
 ## Front Matter
 
+{% youtube Zo62S0ulqhA %}
+
 Basically, you need to fill the [Front Matter](https://jekyllrb.com/docs/front-matter/) as below at the top of the post:
 
 ```yaml
