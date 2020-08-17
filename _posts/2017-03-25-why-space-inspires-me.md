@@ -3,7 +3,7 @@ title: Why space exploration inspires me?
 author: Chaves
 date: 2017-03-25 14:10:00 +0800
 categories: [Blogging, Space, Thoughts]
-tags: [sapce, nasa, inspiration, spaceshuttle]
+tags: [space, nasa, inspiration, spaceshuttle]
 ---
 
 I don't know if I ever could be an `astronaut`, or if I could handle all the types of pressures, fears, knowledge and what ever more each one that has the "lucky" to out on spacewalks, feels when they carry those astonishing missions. Despite all of that, we also know that space exploration is much much more that a single player or a single work area.

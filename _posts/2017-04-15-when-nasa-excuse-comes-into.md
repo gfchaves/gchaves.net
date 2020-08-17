@@ -3,7 +3,7 @@ title: When the "NASA" excuse comes into play
 author: Chaves
 date: 2017-04-15 10:00:00 +0000
 categories: [Blogging, Space, Thoughts]
-tags: [sapce, nasa, inspiration, spaceshuttle]
+tags: [space, nasa, inspiration, spaceshuttle]
 ---
 
 A lot has been said and written about leadership and principles of how to properly lead. No matter the type of leading, I always believe that there are some principles that never should be violated or adjusted or twisted regardless the current situation or project's emergencies. I'm not acknowledging that I'm some kind of expert or something alike, but leadership has a lot to handle and to be aware of.

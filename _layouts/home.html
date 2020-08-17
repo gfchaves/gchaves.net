@@ -66,8 +66,10 @@ layout: page
     <div class="post-meta text-muted">
       <!-- posted date -->
       <i class="far fa-clock fa-fw"></i>
-      {% include timeago.html date=post.date tooltip=true %}
-
+      {% include timeago.html date=post.date tooltip=true %}      
+      <span> 
+        - {{ content | reading_time }} to read
+     </span>
       <!-- page views -->
       {% if site.google_analytics.pv.enabled %}
       <i class="far fa-eye fa-fw"></i>
