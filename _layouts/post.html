@@ -17,14 +17,11 @@ layout: default
 
       <div class="post-meta text-muted d-flex flex-column">
         <!-- Published date and author -->
-        <div>
+        <div>         
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
             <title>clock</title>
             <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
           </svg>
-          <span> 
-            {{ content | reading_time }} to read -
-         </span>
           Posted
           {% include timeago.html date=page.date tooltip=true %}
           by
@@ -34,7 +31,10 @@ layout: default
           {% else %}
             {{ site.author }}
           {% endif %}           
-          </span>           
+          </span>                     
+          <span> 
+            - {{ content | reading_time }} to read
+         </span>
         </div>        
 
         <!-- lastmod -->
