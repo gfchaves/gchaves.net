@@ -111,6 +111,6 @@ So this is one way to integrate the sonar step with a CD/CI system (TFS, team ci
 
 Thank you for your reading, here you can find the samples:
 
-[Sonar-Script-Run-Sample.txt (2.22 kb)](/assets/samples/myproject.runsettings)
+[Sonar-Script-Run-Sample.txt (2.22 kb)](/assets/samples/Sonar-Script-Run-Sample.txt)
 
-[myproject.runsettings (787.00 bytes)](/assets/samples/Sonar-Script-Run-Sample.txt)
+[myproject.runsettings (787.00 bytes)](/assets/samples/myproject.runsettings)
