@@ -34,10 +34,10 @@ git clone https://gchaves@dev.azure.com/xxx/Project-archive/_git/myproject.appli
 #move the .get (struct folder) from the empty to project dir (saw this technique on stackoverfloww)
 Move-Item -Force -Path temp/.git  -Destination .git
 
-#dete the temp folder => at this stage, should be empty
+#delete the temp folder => at this stage, should be empty
 Remove-Item temp -Recurse -Force -Confirm:$false
 
-#all all the files that are at project folder
+#add all the files that are at project folder
 git add .
 
 #commit
@@ -46,5 +46,9 @@ git commit -m "all file to be archive" -a
 #push to the new repo :-)
 git push
 ```
+
+## Conclusion
+
+We could take this script/procedure into another level. I mean that ideal scenario, like for each project's folder, create a new git repo and start the checkout and commit process. In the end, we can have an agent that can archive all our projects/folders into single git repo. - maybe the next time I need to save more files 😊.
 
 Hope that this could be a helper in some way. 💪👍
