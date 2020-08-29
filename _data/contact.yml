@@ -24,8 +24,13 @@
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your mastodon account page
 -
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.linkedin.com/in/gchaves'                  # Fill with your Linkedin homepage
-# -
+  icon: 'fab fa-linkedin'                      # icons powered by <https://fontawesome.com/>
+  url:  'https://www.linkedin.com/in/gchaves'  # Fill with your Linkedin homepage
+
+-
+  icon: 'fab fa-discord'                      # icons powered by <https://fontawesome.com/>
+  url:  'https://discord.com/gfchaves#8428'  # Fill with your Linkedin homepage
+
+  # -
 #   icon: 'fab fa-stack-overflow'
 #   url:  ''                  # Fill with your stackoverflow homepage
