@@ -51,6 +51,9 @@ reading_time:
 # change below value to '/projectname'.
 baseurl: ''
 
+plugins:
+  - jekyll-gist
+
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Europe/Lisbon
 
